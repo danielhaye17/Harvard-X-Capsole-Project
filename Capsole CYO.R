@@ -35,9 +35,11 @@ library(reshape2)
 library(funModeling)
 library(corrplot)
 library(dplyr)
-## Loading the dataset
 
-pdata <- read.csv("datasets_indian_liver_patient.csv")
+## Loading the dataset from my github profile
+
+pdata <- read.csv("https://raw.githubusercontent.com/danielhaye17/Harvard-X-Capsole-Project/master/datasets_indian_liver_patient.csv")
+
 
 #********************* Data Evaluation **********************
 
@@ -390,7 +392,9 @@ table("Accuracy" = svm_Accuracy, "Sensitivity" = svm_Sensitivity,
 
 
 # **************************** Results ********************************** 
-model_results
+print(model_results)
+
+
 
 
 
